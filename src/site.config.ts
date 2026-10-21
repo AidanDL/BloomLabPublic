@@ -9,6 +9,8 @@ export interface SiteConfig {
   tagline: string
   /** Who publishes the game (shown in the footer and privacy policy). */
   developerName: string
+  /** The developer's own website (linked from the footer). */
+  developerUrl: string
   /** Where players and reviewers can reach the developer about privacy. */
   contactEmail: string
   /** Canonical origin of this site, without a trailing slash. */
@@ -27,6 +29,7 @@ export const site: SiteConfig = {
   gameName: 'Bloom Lab',
   tagline: 'Breed rare flowers. Discover mutations.',
   developerName: 'Little Fathom',
+  developerUrl: 'https://littlefathom.com',
   contactEmail: 'info@littlefathom.com',
   siteUrl: 'https://bloomlab.littlefathom.com',
   playStoreUrl: PLACEHOLDER,

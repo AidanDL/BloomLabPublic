@@ -67,6 +67,10 @@ describe('Home', () => {
     const footer = screen.getByRole('contentinfo')
     expect(within(footer).getByRole('link', { name: /contact/i })).toHaveAttribute('href', `mailto:${site.contactEmail}`)
     expect(footer.textContent).toContain(`© ${site.copyrightYear} ${site.developerName}`)
+    expect(within(footer).getByRole('link', { name: /little fathom website/i })).toHaveAttribute(
+      'href',
+      'https://littlefathom.com',
+    )
   })
 })
 

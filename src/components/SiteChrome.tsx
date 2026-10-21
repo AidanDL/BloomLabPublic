@@ -27,7 +27,7 @@ export function SiteHeader({ onHome }: { onHome: boolean }) {
   )
 }
 
-/** Footer with privacy link, contact and copyright. */
+/** Footer with privacy link, contact, the developer's site and copyright. */
 export function SiteFooter() {
   const email = display(site.contactEmail, '')
   return (
@@ -39,6 +39,7 @@ export function SiteFooter() {
         <nav aria-label="Footer">
           <a href={paths.privacy}>Privacy policy</a>
           {email ? <a href={`mailto:${email}`}>Contact: {email}</a> : null}
+          <a href={site.developerUrl}>{display(site.developerName, 'Developer')} website</a>
         </nav>
       </div>
     </footer>
