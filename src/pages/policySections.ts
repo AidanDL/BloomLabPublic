@@ -1,0 +1,22 @@
+/** Privacy policy section headings, in order. */
+export const policySections = [
+  'Summary',
+  'Who we are',
+  'Information we collect',
+  'Game progress and Google Play Games',
+  'Advertising (Google AdMob)',
+  'Your consent choices',
+  'Analytics, crash reports and game settings (Firebase)',
+  'Notifications',
+  'In-app purchases (Google Play)',
+  'App permissions',
+  'Information stored on your device',
+  'How we use information',
+  'Children',
+  'Your choices and rights',
+  'Data retention and deletion',
+  'Security',
+  'International transfers',
+  'Changes to this policy',
+  'Contact us',
+] as const
